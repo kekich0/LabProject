@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1772640483847" clover="3.2.0">
+  <project timestamp="1772640483847" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="17" coveredelements="17" complexity="0" loc="10" ncloc="10" packages="2" files="2" classes="2"/>
+    <package name="src">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="App.js" path="D:\Desktop\6 семестр\Управління ІТ-проєктами\lab-project\src\App.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="calculateSum.js" path="D:\Desktop\6 семестр\Управління ІТ-проєктами\lab-project\src\utils\calculateSum.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="7" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

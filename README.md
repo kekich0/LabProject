@@ -1,6 +1,16 @@
 # LabProject
 Веб-додаток для виконання лабораторних робіт.
 
-## Запуск
-npm start"##Teast 2" 
-npm start"##Test 1" 
+## Автор
+Кудибин Назар ПП-36
+
+## Використані технології
+React
+
+## Запуск додатку
+npm start
+
+## Запуск тестів
+npm test
+npm test -- --coverage
+npm run e2e

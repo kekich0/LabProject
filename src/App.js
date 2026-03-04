@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { calculateSum } from "./utils/calculateSum";
 
 function App() {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [sum, setSum] = useState(null);
 
-  const calculateSum = () => {
-    const result = Number(num1) + Number(num2);
+  const handleCalculate = () => {
+    const result = calculateSum(num1, num2);
     setSum(result);
   };
 
@@ -32,11 +33,9 @@ function App() {
 
       <br /><br />
 
-      <button onClick={calculateSum}>Обчислити суму</button>
+      <button onClick={handleCalculate}>Обчислити суму</button>
 
-      {sum !== null && (
-        <h2>Сума: {sum}</h2>
-      )}
+      {sum !== null && <h2>Сума: {sum}</h2>}
     </div>
   );
 }
