@@ -14,3 +14,12 @@ npm start
 npm test
 npm test -- --coverage
 npm run e2e
+
+## Запуск режимів
+npm run dev
+
+npm run build
+npm run preview
+
+## Запуск перевірки коду
+npm run lint

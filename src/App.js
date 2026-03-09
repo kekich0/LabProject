@@ -11,9 +11,13 @@ function App() {
     setSum(result);
   };
 
+  const status = process.env.REACT_APP_STATUS;
+
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Калькулятор суми</h1>
+
+      <p>Environment: {status}</p>
 
       <input
         type="number"
