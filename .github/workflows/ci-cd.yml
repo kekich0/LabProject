@@ -33,7 +33,7 @@ jobs:
 
       # Крок 3: Встановлення залежності
       - name: Install dependencies
-        run: install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
       # Крок 4: Перевірка лінтера
       - name: Run linter
