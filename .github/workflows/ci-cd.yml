@@ -41,4 +41,4 @@ jobs:
 
       # Крок 5: Запуск тестів
       - name: Run tests
-        run: npm run test
+        run: npm run -- --watchAll=false
