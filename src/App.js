@@ -5,7 +5,6 @@ function App() {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [sum, setSum] = useState(null);
-  const [nums2, setNums2] = useState("");
 
   const handleCalculate = () => {
     const result = calculateSum(num1, num2);
