@@ -1,4 +1,5 @@
 # LabProject
+[![CI/CD Pipeline](https://github.com/kekich0/LabProject/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/kekich0/LabProject/actions/workflows/ci-cd.yml)
 Веб-додаток для виконання лабораторних робіт.
 
 ## Автор
