@@ -39,6 +39,6 @@ jobs:
       - name: Run linter
         run: npm run lint
 
-      # Крок 5: Запуск тестів
+      # Крок 5: Запуск тестів 
       - name: Run tests
         run: npm run test
