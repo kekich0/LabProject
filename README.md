@@ -24,4 +24,4 @@ npm run build
 npm run preview
 
 ## Запуск перевірки коду
-npm run lint
+npm run lint 
