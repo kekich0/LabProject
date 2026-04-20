@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@posthog/react": "^1.8.2",
+    "@sentry/react": "^10.49.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/user-event": "^13.5.0",
     "posthog-js": "^1.363.2",

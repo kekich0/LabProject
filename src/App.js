@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 import posthog from "posthog-js";
 import { calculateSum } from "./utils/calculateSum";
+import * as Sentry from "@sentry/react";
+
+function ErrorButton() {
+  return (
+    <button
+      onClick={() => {
+        throw new Error('This is your first error!');
+      }}
+    >
+      Break the world
+    </button>
+  );
+}
 
 function App() {
   const [num1, setNum1] = useState("");
@@ -21,6 +34,18 @@ function App() {
         setShowPositiveOnly(true);
       }
     });
+  }, []);
+
+  useEffect(() => {
+    Sentry.setUser({
+      id: "1234567",
+      email: "studentt@example.com",
+      segment: "premium_user",
+    });
+  
+    return () => {
+      Sentry.setUser(null);
+    };
   }, []);
 
   const handleCalculate = () => {
@@ -84,6 +109,8 @@ function App() {
       )}
 
       {sum !== null && <h2>Сума: {sum}</h2>}
+
+      <ErrorButton />
     </div>
   );
 }
