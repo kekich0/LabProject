@@ -10,7 +10,7 @@ function ErrorButton() {
         throw new Error('This is your first error!');
       }}
     >
-      Break the world
+      Break the world!
     </button>
   );
 }
