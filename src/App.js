@@ -10,7 +10,7 @@ function ErrorButton() {
         throw new Error('This is your first error!');
       }}
     >
-      Break the world
+      Break the world!
     </button>
   );
 }
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     posthog.init(process.env.REACT_APP_POSTHOG_KEY, {
-      api_host: process.env.REACT_APP_POSTHOG_HOST,
+      api_host: "https://lab-project-xi.vercel.app/ingest",
       person_profiles: "identified_only",
     });
 
