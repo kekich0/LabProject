@@ -25,14 +25,12 @@ function App() {
 
   useEffect(() => {
     posthog.init(process.env.REACT_APP_POSTHOG_KEY, {
-      api_host: "https://lab-project-xi.vercel.app/ingest/",
+      api_host: "/ingest",
       person_profiles: "identified_only",
     });
 
     posthog.onFeatureFlags(() => {
-      if (posthog.isFeatureEnabled("show-positive-only")) {
-        setShowPositiveOnly(true);
-      }
+      setShowPositiveOnly(posthog.isFeatureEnabled("show-positive-only"));
     });
   }, []);
 
